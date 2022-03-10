@@ -167,6 +167,22 @@ PrefabInstance:
       value: Question Answer 1
       objectReference: {fileID: 0}
     - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
       objectReference: {fileID: 0}
@@ -185,6 +201,10 @@ PrefabInstance:
     - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536280318062021472, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 6964410065019621782, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
       propertyPath: m_Name
@@ -304,6 +324,22 @@ PrefabInstance:
       value: Question Answer 3
       objectReference: {fileID: 0}
     - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
       objectReference: {fileID: 0}
@@ -326,6 +362,10 @@ PrefabInstance:
     - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536280318062021472, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 6964410065019621782, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
       propertyPath: m_Name
@@ -445,6 +485,22 @@ PrefabInstance:
       value: Question Answer 2
       objectReference: {fileID: 0}
     - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
       objectReference: {fileID: 0}
@@ -467,6 +523,10 @@ PrefabInstance:
     - target: {fileID: 2907161460444869880, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536280318062021472, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 6964410065019621782, guid: 7dbb4fd5f7b602b419ef2b3ff124c5cf, type: 3}
       propertyPath: m_Name

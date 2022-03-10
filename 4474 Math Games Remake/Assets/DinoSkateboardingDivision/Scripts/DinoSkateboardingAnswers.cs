@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DinoSkateboardingAnswers : MonoBehaviour
@@ -10,11 +11,13 @@ public class DinoSkateboardingAnswers : MonoBehaviour
     private int correctAnswerNum;
     private DinoSkateboardingQuestionsManager questionsManager;
     private DinoSkateboardingPlayerMove playerMove;
+    private Button[] answerButtons;
 
     void Start()
     {
         questionsManager = FindObjectOfType<DinoSkateboardingQuestionsManager>();
         playerMove = FindObjectOfType<DinoSkateboardingPlayerMove>();
+        answerButtons = GetComponentsInChildren<Button>();
     }
 
     public void SetupNumbers(int[] newNumbers, int correctNum)
@@ -31,6 +34,9 @@ public class DinoSkateboardingAnswers : MonoBehaviour
             // Color text green
             questionsManager.Solved();
             playerMove.Kickflip();
+            for(int i = 0; i < answerButtons.Length; i++) {
+                answerButtons[i].interactable = false;
+            }
             print("Correct!");
         }
         else {

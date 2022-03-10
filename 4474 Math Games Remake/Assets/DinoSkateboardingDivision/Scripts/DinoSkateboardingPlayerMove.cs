@@ -32,6 +32,8 @@ public class DinoSkateboardingPlayerMove : MonoBehaviour
         if (other.CompareTag("StepStop")) {
             questionManager.ActivateQuestion();
             StartCoroutine(waitToStop());
+        } else if (other.CompareTag("Win")) {
+            canMove = false;
         }
     }
 
