@@ -33,7 +33,7 @@ public class DinoSkateboardingAnswers : MonoBehaviour
         if (answerNum == correctAnswerNum) {
             // Color text green
             questionsManager.Solved();
-            playerMove.Kickflip();
+            playerMove.Kickflip(answerNum);
             for(int i = 0; i < answerButtons.Length; i++) {
                 answerButtons[i].interactable = false;
             }

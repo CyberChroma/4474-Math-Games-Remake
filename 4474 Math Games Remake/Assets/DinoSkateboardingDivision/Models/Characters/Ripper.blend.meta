@@ -2,13 +2,34 @@ fileFormatVersion: 2
 guid: 0f66c483ae364fc4fb1e4b78ef226c72
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -623603649343465320
+    second: Moving
+  - first:
+      74: 9203124523298976015
+    second: Kickflip
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Eyes
     second: {fileID: 2100000, guid: 32378bf6ebeaede4691210412be6b963, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Helmet-Inside
+    second: {fileID: 2100000, guid: ee60b2bf3c2c5024882a411ddad25822, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Helmet-Main
+    second: {fileID: 2100000, guid: 5e09b69ed8870d24480f4bb64d648ccf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Helmet-Stripes
+    second: {fileID: 2100000, guid: 0577bad15f46bde4895ff86d549391fd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -19,6 +40,36 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Ripper
     second: {fileID: 2100000, guid: de4efd5072a07544ba0b35eeca433ed2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skateboard-Ripper
+    second: {fileID: 2100000, guid: bbb802b3494ca07468a94ff479a79b91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skateboard-Ripper 2
+    second: {fileID: 2100000, guid: 149f1817c63105542a47a7ae499bb2d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skateboard-Ripper 3
+    second: {fileID: 2100000, guid: 95e85daf9e1ec0a4197983b2b3b2e5e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skateboard-Ripper 4
+    second: {fileID: 2100000, guid: f8ff920469bb2e7418d862e5ad2e6019, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skateboard-Ripper 5
+    second: {fileID: 2100000, guid: ba8aae8975302494bbacfe46c94d950b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skateboard-Ripper Wheels
+    second: {fileID: 2100000, guid: 4aa1ca053f7057b41919ee0a39c661b2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -55,7 +106,65 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Moving
+      takeName: Scene
+      internalID: 0
+      firstFrame: 40
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 40
+    - serializedVersion: 16
+      name: Kickflip
+      takeName: Scene
+      internalID: 0
+      firstFrame: 160
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 180
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -64,7 +173,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
     importCameras: 0
     importLights: 0

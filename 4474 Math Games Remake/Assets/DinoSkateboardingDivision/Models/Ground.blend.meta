@@ -3,7 +3,27 @@ guid: 2c558b2445785bf43b3d3507aaadac1b
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DinoSkateboarding-FinishLine
+    second: {fileID: 2100000, guid: 6b332fc7ebb19b540b6671eced0cedbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DinoSkateboarding-Ground
+    second: {fileID: 2100000, guid: 46cbf7df8173e4041be27c0b58a1c13c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DinoSkateboarding-Railing
+    second: {fileID: 2100000, guid: 449618f3d618c5040a7576c6118bb590, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DinoSkateboarding-StartingLine
+    second: {fileID: 2100000, guid: db470e1682299da4fb06a2c5a726d39f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
