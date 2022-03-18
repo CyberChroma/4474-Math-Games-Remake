@@ -34,6 +34,12 @@ public class DinoSkateRaceManager : MonoBehaviour
     public AudioClip end2ndVoiceLine;
     public AudioClip end3rdVoiceLine;
 
+    public float endTextMoveSmoothing;
+    public Transform endText;
+    public Transform endOnScreenPos;
+    public Transform endOffScreenPos;
+    public Transform placeTextEndPos;
+
     private bool raceOver;
     private int playerPlace;
     private DinoSkateVoiceManager voiceManager;
@@ -47,6 +53,7 @@ public class DinoSkateRaceManager : MonoBehaviour
         characterSelectMusic.SetActive(true);
         raceMusic.SetActive(false);
         voiceManager = FindObjectOfType<DinoSkateVoiceManager>();
+        endText.position = endOffScreenPos.position;
     }
 
     public void StartRace() {
@@ -89,6 +96,9 @@ public class DinoSkateRaceManager : MonoBehaviour
             UpdatePlaceText();
             AIFinishRace();
             EndRace();
+        } else {
+            endText.position = Vector3.Lerp(endText.position, endOnScreenPos.position, endTextMoveSmoothing * Time.deltaTime);
+            placeText.transform.position = Vector3.Lerp(placeText.transform.position, placeTextEndPos.position, endTextMoveSmoothing * Time.deltaTime);
         }
     }
 

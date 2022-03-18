@@ -9,6 +9,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Pedistal
     second: {fileID: 2100000, guid: e8f31de5dd9aa554d833f849b3381fe8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pedistal 2
+    second: {fileID: 2100000, guid: 2e2b87edc18d47c4bb9d060532967c20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SprawPaintText
+    second: {fileID: 2100000, guid: b3f2e6b68164b7848a49ae185b5289cb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
