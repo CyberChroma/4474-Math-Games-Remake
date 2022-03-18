@@ -22,8 +22,21 @@ public class DinoSkateRaceManager : MonoBehaviour
     public GameObject setText;
     public GameObject goText;
 
+    public GameObject characterSelectMusic;
+    public GameObject raceMusic;
+
+    public AudioClip raceIntroVoiceLine;
+    public AudioClip readyVoiceLine;
+    public AudioClip setVoiceLine;
+    public AudioClip goVoiceLine;
+
+    public AudioClip end1stVoiceLine;
+    public AudioClip end2ndVoiceLine;
+    public AudioClip end3rdVoiceLine;
+
     private bool raceOver;
     private int playerPlace;
+    private DinoSkateVoiceManager voiceManager;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +44,9 @@ public class DinoSkateRaceManager : MonoBehaviour
         readyText.SetActive(false);
         setText.SetActive(false);
         goText.SetActive(false);
+        characterSelectMusic.SetActive(true);
+        raceMusic.SetActive(false);
+        voiceManager = FindObjectOfType<DinoSkateVoiceManager>();
     }
 
     public void StartRace() {
@@ -39,22 +55,28 @@ public class DinoSkateRaceManager : MonoBehaviour
 
     IEnumerator ReadySetGo()
     {
-        yield return new WaitForSeconds(0.5f);
+        voiceManager.PlayVoiceLine(raceIntroVoiceLine);
+        yield return new WaitForSeconds(4.5f);
         //Ready
+        voiceManager.PlayVoiceLine(readyVoiceLine);
         readyText.SetActive(true);
         yield return new WaitForSeconds(1);
         readyText.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.25f);
         //Set
+        voiceManager.PlayVoiceLine(setVoiceLine);
         setText.SetActive(true);
         yield return new WaitForSeconds(1);
         setText.SetActive(false);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         //Go!
+        voiceManager.PlayVoiceLine(goVoiceLine);
         goText.SetActive(true);
         playerMove.canMove = true;
         AIMove1.canMove = true;
         AIMove2.canMove = true;
+        characterSelectMusic.SetActive(false);
+        raceMusic.SetActive(true);
         yield return new WaitForSeconds(2);
         goText.SetActive(false);
     }
@@ -109,8 +131,8 @@ public class DinoSkateRaceManager : MonoBehaviour
             else {
                 AIMove1.raceDonePos = endPos1st;
             }
+            AIMove1.GetComponent<DinoSkateProgressionMeter>().enabled = false;
         }
-
         if (AIMove2.doneRace && AIMove2.raceDonePos == null) {
             if (AIMove1.doneRace) {
                 AIMove2.raceDonePos = endPos2nd;
@@ -118,6 +140,7 @@ public class DinoSkateRaceManager : MonoBehaviour
             else {
                 AIMove2.raceDonePos = endPos1st;
             }
+            AIMove2.GetComponent<DinoSkateProgressionMeter>().enabled = false;
         }
     }
 
@@ -128,17 +151,21 @@ public class DinoSkateRaceManager : MonoBehaviour
             switch (playerPlace) {
                 case 1:
                     playerMove.raceDonePos = endPos1st;
+                    voiceManager.PlayVoiceLine(end1stVoiceLine);
                     break;
                 case 2:
                     playerMove.raceDonePos = endPos2nd;
+                    voiceManager.PlayVoiceLine(end2ndVoiceLine);
                     break;
                 case 3:
                     playerMove.raceDonePos = endPos3rd;
+                    voiceManager.PlayVoiceLine(end3rdVoiceLine);
                     break;
             }
 
             AIMove1.StopAllCoroutines();
             AIMove1.canMove = false;
+            AIMove1.kickflipping = false;
             AIMove1.raceOver = true;
             if (AIMove1.raceDonePos == null) {
                 int AI1Place = 3;
@@ -163,6 +190,7 @@ public class DinoSkateRaceManager : MonoBehaviour
 
             AIMove2.StopAllCoroutines();
             AIMove2.canMove = false;
+            AIMove2.kickflipping = false;
             AIMove2.raceOver = true;
             if (AIMove2.raceDonePos == null) {
                 int AI2Place = 3;

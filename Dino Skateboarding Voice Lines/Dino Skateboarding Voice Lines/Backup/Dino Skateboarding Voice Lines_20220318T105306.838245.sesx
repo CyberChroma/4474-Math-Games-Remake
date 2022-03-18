@@ -1,0 +1,1826 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE sesx>
+<sesx version="1.9">
+
+  <session appBuild="22.2.0.61" appVersion="22.2" audioChannelType="stereo" bitDepth="32" duration="5076112" sampleRate="48000">
+    <tracks>
+      <audioTrack automationLaneOpenState="false" id="10001" index="1" select="true" visible="true">
+        <trackParameters trackHeight="276" trackHue="160" trackMinimized="false">
+          <name>Track 1</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="true" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="f6f42047-c354-4986-b65d-1926288f0844" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="03ea6f55-afef-4b55-8338-7c1de6414126" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="2bbc07fd-43a3-4a73-b25f-a440e4d90dbb" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="86106bcd-455c-4a50-8094-7b86bc6c6f7c" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <effectsRack preFader="true">
+          <component componentGuid="85100737-6d18-4c29-ac38-471ff0f64795" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" parameterValue="0"/>
+          </component>
+          <component componentGuid="f97f46f5-a556-40bb-b545-714df42c34fc" id="rackInput" powered="true">
+            <parameter index="0" parameterValue="1"/>
+            <parameter index="1" parameterValue="0"/>
+          </component>
+          <component componentGuid="23a0ed28-751e-4dff-9de5-d2418a57612f" id="rackOutput" powered="true">
+            <parameter index="0" parameterValue="1"/>
+            <parameter index="1" parameterValue="0"/>
+          </component>
+          <slot powered="true" slotIndex="0">
+            <component componentGuid="0473673e-3a74-43b4-a577-7aac72e3a580" componentID="c6762838-e451-4d22-9c90-b0eaa734605a" editorHeight="477" editorLeft="649" editorTop="282" editorWidth="622" name="DeNoise" presetName="Heavy Noise Reduction">
+              <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+              <presetChunkData><![CDATA[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]]></presetChunkData>
+            </component>
+          </slot>
+          <slot powered="true" slotIndex="1">
+            <component componentGuid="37a9e5e3-8b84-475d-a054-bc11be0714c4" componentID="8edcd326-33de-4a4d-985b-f1bf48ed1427" editorHeight="565" editorLeft="519" editorTop="301" editorWidth="794" name="Parametric Equalizer" presetName="Vocal Enhancer">
+              <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+              <parameter index="0" name="Low Shelf Frequency" parameterValue="0.00376953580416738986968994140625"/>
+              <parameter index="1" name="Low Shelf Gain" parameterValue="0.5625"/>
+              <parameter index="2" name="High Shelf Frequency" parameterValue="0.727191865444183349609375"/>
+              <parameter index="3" name="High Shelf Gain" parameterValue="0.644736826419830322265625"/>
+              <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00125104002654552459716796875"/>
+              <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+              <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+              <parameter index="7" name="EQ Band 1 Enable" parameterValue="0"/>
+              <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.0075062601827085018157958984375"/>
+              <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+              <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+              <parameter index="11" name="EQ Band 2 Enable" parameterValue="0"/>
+              <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.01132103241980075836181640625"/>
+              <parameter index="13" name="EQ Band 3 Q" parameterValue="0.00014998999540694057941436767578125"/>
+              <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.4684210717678070068359375"/>
+              <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+              <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.1326110064983367919921875"/>
+              <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+              <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+              <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+              <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.532944023609161376953125"/>
+              <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+              <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+              <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+              <parameter index="24" name="Gain" parameterValue="0.66666698455810546875"/>
+              <parameter index="25" name="ConstantQ" parameterValue="1"/>
+              <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+              <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+              <parameter index="28" name="Ultra-Quiet Mode" parameterValue="1"/>
+              <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+              <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+              <parameter index="31" name="Original Sample Rate" parameterValue="0.25"/>
+              <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.00249998713843524456024169921875"/>
+              <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.00999999605119228363037109375"/>
+              <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.01943187974393367767333984375"/>
+              <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.1600005924701690673828125"/>
+              <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.639999926090240478515625"/>
+              <parameter index="37" name="High-Pass Filter Enable" parameterValue="1"/>
+              <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0.0025020851753652095794677734375"/>
+              <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+              <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+              <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.74979197978973388671875"/>
+              <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+              <parameter index="43" name="Bypass" parameterValue="0"/>
+              <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+            </component>
+          </slot>
+          <slot powered="true" slotIndex="2">
+            <component componentGuid="4aadef4b-89ec-4c38-8a1f-15872eb18352" componentID="82882adc-18cb-475b-b237-597576a5e707" editorHeight="215" editorLeft="862" editorTop="482" editorWidth="463" name="Vocal Enhancer" presetName="(Custom)">
+              <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+              <presetChunkData><![CDATA[EiBuYWZldFMBAAAAAQAAAAEAAAA=]]></presetChunkData>
+            </component>
+          </slot>
+          <slot powered="true" slotIndex="3">
+            <component componentGuid="d63a52f1-104e-427c-b202-e9a6caedec0b" componentID="f14fee7d-fe5f-4202-b790-f53209e56411" editorHeight="306" editorLeft="799" editorTop="404" editorWidth="463" name="Amplify" presetName="+10dB Boost">
+              <busConfig><![CDATA[{"in":[{"layout":[100,101],"name":"","type":0}],"out":[{"layout":[100,101],"name":"","type":0}]}]]></busConfig>
+              <parameter index="0" name="Channel Count" parameterValue="0.0625"/>
+              <parameter index="1" name="Link Sliders" parameterValue="1"/>
+              <parameter index="2" name="Left" parameterValue="0.736110985279083251953125"/>
+              <parameter index="3" name="Right" parameterValue="0.736110985279083251953125"/>
+              <parameter index="4" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="5" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="6" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="7" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="8" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="9" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="10" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="11" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="12" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="13" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="14" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="15" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="16" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="17" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="18" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="19" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="20" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="21" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="22" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="23" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="24" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="25" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="26" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="27" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="28" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="29" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="30" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="31" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="32" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="33" name="" parameterValue="0.666666686534881591796875"/>
+              <parameter index="34" name="Link Keyframes" parameterValue="1"/>
+            </component>
+          </slot>
+        </effectsRack>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="183751" fileID="0" hue="-1" id="0" lockedInTime="false" looped="false" name="Track 1_002" offline="false" select="false" sourceInPoint="1016249" sourceOutPoint="1200000" startPoint="0" zOrder="0">
+          <component componentGuid="29aa774f-acfd-4ff1-9fd3-11c6f12b0ce6" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="c7137d3a-8f33-4423-9032-af277b87b52f" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="ac17f7e6-b2a9-4e28-84aa-90b54c390432" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="183751" shape="19" startPoint="183751" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="254829" fileID="1" hue="-1" id="1" lockedInTime="false" looped="false" name="Track 1_005" offline="false" select="false" sourceInPoint="119152" sourceOutPoint="177402" startPoint="196579" zOrder="1">
+          <component componentGuid="c411ab7a-8361-4cfc-a12f-d3f002c59c14" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="517d7984-59cd-4335-ac0e-95ffa009b077" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="6ae73485-d4e5-4122-bff0-e00bc6ec1ce1" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="58250" shape="19" startPoint="58250" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="323107" fileID="1" hue="-1" id="2" lockedInTime="false" looped="false" name="Track 1_005" offline="false" select="false" sourceInPoint="194790" sourceOutPoint="249149" startPoint="268748" zOrder="2">
+          <component componentGuid="8e004fab-dcef-4227-8bf9-1964e4b6d89c" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="da22d0fa-8669-444f-9f25-a4a7c89abf72" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="df5ee002-0ec9-4eaf-ad2f-07ce91f6357f" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="54359" shape="19" startPoint="54359" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="379705" fileID="2" hue="-1" id="3" lockedInTime="false" looped="false" name="Track 1_003" offline="false" select="false" sourceInPoint="270337" sourceOutPoint="318997" startPoint="331045" zOrder="3">
+          <component componentGuid="63c0d12a-1b3f-4d69-8525-fca24d664ef3" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="0.907769978046417236328125"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="14b713b4-4419-4465-a840-e57b51e231e4" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="d8a98b52-75c8-4d3b-b8bc-23066a8e2088" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="48660" shape="19" startPoint="48660" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="449752" fileID="2" hue="-1" id="4" lockedInTime="false" looped="false" name="Track 1_003" offline="false" select="false" sourceInPoint="352338" sourceOutPoint="411010" startPoint="391080" zOrder="4">
+          <component componentGuid="eb65a7b0-31df-482b-8e49-4aa6de457ad2" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="c5c9a349-5d13-4397-9e50-e644e2b93f5d" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="c342283e-a75d-4905-9830-b9e907da752f" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="58672" shape="19" startPoint="58672" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="659069" fileID="3" hue="-1" id="5" lockedInTime="false" looped="false" name="Track 1_010" offline="false" select="false" sourceInPoint="198679" sourceOutPoint="397723" startPoint="460025" zOrder="5">
+          <component componentGuid="b0e77011-b3bd-4147-8892-50475d665a3f" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="566f9cd3-1c26-445e-8368-92374f599082" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="3b9d1c4a-25dc-4a08-820e-c52b29325e48" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="199044" shape="19" startPoint="199044" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="705209" fileID="4" hue="-1" id="6" lockedInTime="false" looped="false" name="Track 1_009" offline="false" select="true" sourceInPoint="280383" sourceOutPoint="310315" startPoint="675277" zOrder="12">
+          <component componentGuid="39ec31ae-fe91-41cd-ade9-a3625ac41961" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="f703f82a-1151-42b8-a742-9f265e629dd0" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="e620430f-6f95-4eb8-aa42-80c7bb1ae9ea" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="29932" shape="19" startPoint="29932" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="769656" fileID="3" hue="-1" id="7" lockedInTime="false" looped="false" name="Track 1_010" offline="false" select="false" sourceInPoint="451412" sourceOutPoint="497728" startPoint="723340" zOrder="13">
+          <component componentGuid="f4c8e7bb-46ea-41a6-bb07-bf4f29dec1cf" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="58cb807f-9fbf-484e-83c1-0c96a07177d6" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="a99eaa39-2a01-4b1e-92aa-8523a07f9c1f" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="46316" shape="19" startPoint="46316" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="871717" fileID="3" hue="-1" id="8" lockedInTime="false" looped="false" name="Track 1_010" offline="false" select="false" sourceInPoint="511927" sourceOutPoint="588746" startPoint="794898" zOrder="15">
+          <component componentGuid="335fce77-f6f8-4e8f-ac74-ad46aa28d75b" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1.998199939727783203125"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="e4f857c2-bdbd-4309-8d98-276f3f472bcf" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="8d0df68c-6b71-4e86-a2f7-a2d088bcb33b" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="76819" shape="19" startPoint="76819" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1024761" fileID="5" hue="-1" id="9" lockedInTime="false" looped="false" name="Track 1_011" offline="false" select="false" sourceInPoint="116238" sourceOutPoint="252401" startPoint="888598" zOrder="6">
+          <component componentGuid="76276390-ebb7-4650-91fd-a97179b49cb6" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="ef03746b-13b6-4757-914a-73879941ad3d" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="250f33eb-3b8b-4876-afbe-b0cdca47afa6" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="136163" shape="19" startPoint="136163" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1133265" fileID="6" hue="-1" id="10" lockedInTime="false" looped="false" name="Track 1_012" offline="false" select="false" sourceInPoint="248109" sourceOutPoint="343497" startPoint="1037877" zOrder="7">
+          <component componentGuid="8476d50d-2ceb-4c47-9fa6-5438d384242b" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="1c350ccb-2933-458c-880e-36dbc9f6d0b1" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="27fc89ae-360e-48df-8eaf-bd0588e4a47d" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="95388" shape="19" startPoint="95388" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1197707" fileID="7" hue="-1" id="11" lockedInTime="false" looped="false" name="Track 1_014" offline="false" select="false" sourceInPoint="536731" sourceOutPoint="589083" startPoint="1145355" zOrder="8">
+          <component componentGuid="54041358-2951-4f3d-834a-210646b564af" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="85f6b6af-4a88-4cbe-a070-f28db17389ce" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="3093fb76-ac44-43ba-ac46-331d98af1517" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="52352" shape="19" startPoint="52352" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1449285" fileID="8" hue="-1" id="12" lockedInTime="false" looped="false" name="Track 1_017" offline="false" select="false" sourceInPoint="163271" sourceOutPoint="404253" startPoint="1208303" zOrder="9">
+          <component componentGuid="538e8221-8614-41e8-8288-0757226d2670" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="f6142dc4-5735-4ccf-81a3-5997a8a8bdc0" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="1caa5c29-f0a5-432f-98eb-4fc04028f96b" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="240982" shape="19" startPoint="240982" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1644707" fileID="9" hue="-1" id="13" lockedInTime="false" looped="false" name="Track 1_018" offline="false" select="false" sourceInPoint="649048" sourceOutPoint="832266" startPoint="1461489" zOrder="10">
+          <component componentGuid="8746c7f2-12be-45ac-b848-aa7044a71b79" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="68cccc3b-f48c-4ca5-8a6b-6c9ca3219a15" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="e4c64f56-7647-4305-9aa0-4a7ef0455d58" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="183218" shape="19" startPoint="183218" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1901989" fileID="10" hue="-1" id="14" lockedInTime="false" looped="false" name="Track 1_019" offline="false" select="false" sourceInPoint="1514245" sourceOutPoint="1764487" startPoint="1651747" zOrder="11">
+          <component componentGuid="1108cead-d54d-4203-a2ea-f622ee4f6f5e" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="5b3cbdf3-c6f8-43b6-8888-ffb82852553e" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="8805dcf0-72c0-4cfa-aca1-9de799378a10" componentID="Audition.StereoPanner" id="clipPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="250242" shape="19" startPoint="250242" type="log"/>
+          <take sourceInPoint="0"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <editParameter parameterIndex="0" slotIndex="4294967281"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="false" visible="true">
+        <trackParameters trackHeight="276" trackHue="267" trackMinimized="false">
+          <name>Track 2</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="ebc03997-9179-4cd8-9374-fb1416943e28" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="54a25c41-5c9c-4386-ad35-b4c0855b1d74" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="2a7ac19e-a067-4a13-bea9-cc6099050e76" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="f2af6be0-bf05-4999-a110-e3e88e6e1225" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10003" index="3" select="false" visible="true">
+        <trackParameters trackHeight="276" trackHue="51" trackMinimized="false">
+          <name>Track 3</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="f7f8271c-87eb-4dd9-bc8e-27626ebe752c" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="30a42c8d-0f26-4d09-8281-c04b6785a694" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="1549abb2-17fd-487a-8eee-9fb545ae7c49" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="3ab11b4b-bde3-4688-adec-5296520da30f" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10004" index="4" select="false" visible="true">
+        <trackParameters trackHeight="276" trackHue="182" trackMinimized="false">
+          <name>Track 4</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="bf277c42-cd80-4a95-ab56-2c2cc1a56933" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="6c0d24a7-98df-4835-86cb-24df8b734cbf" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="6e597fb2-0222-4e60-a757-66cc08bb5cdc" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="f585165a-2af9-481b-90d8-20d5dd4191ed" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10005" index="5" select="false" visible="true">
+        <trackParameters trackHeight="276" trackHue="294" trackMinimized="false">
+          <name>Track 5</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="b07a309d-d8ec-414a-8b54-9be28ede6940" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="71f9a6cf-3846-4117-8fc6-4ddede13b3dd" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="2537d368-3246-4275-bf39-0c81773ea145" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="105470e4-09e4-4c16-bb9c-2dce6da59634" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10006" index="6" select="false" visible="true">
+        <trackParameters trackHeight="276" trackHue="92" trackMinimized="false">
+          <name>Track 6</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="98d530ba-35b2-4368-9f5b-7297b4c1fb04" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="5ba4d922-2c88-4e9c-a7b1-33554affbfc8" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="04f0f149-e38e-40f8-b65d-6ea44915dc17" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="48ef2a0e-06ec-4245-816f-cdfb403fe58a" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <masterTrack automationLaneOpenState="false" id="10000" index="7" select="false" visible="true">
+        <trackParameters trackHeight="276" trackHue="-1" trackMinimized="false">
+          <name>Mix</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="1" type="hardwareOutput"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="3d875395-e4ae-43e7-82b7-5f8da433b2ec" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="3625b460-0d9b-4507-a085-e1dbdd2326a0" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="224686e8-8b8f-4cb0-a836-81b378a18e12" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="61c54322-9e20-4d26-9549-3737a8dcdc26" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </masterTrack>
+    </tracks>
+    <sessionState ctiPosition="840669" smpteStart="0">
+      <selectionState selectionDuration="0" selectionStart="840669"/>
+      <viewState horizontalViewDuration="1008347" horizontalViewStart="0" trackControlsWidth="224" verticalScrollOffset="0"/>
+      <timeFormatState beatsPerBar="4" beatsPerMinute="120" customFrameRate="12" linkToDefaultTimeSettings="true" noteLength="4" subdivisions="16" timeCodeDropFrame="false" timeCodeFrameRate="30" timeCodeNTSC="false" timeFormat="timeFormatDecimal"/>
+      <mixingOptionState defaultPanModeLogarithmic="false" panPower="-3" playOverlappingClips="false"/>
+    </sessionState>
+    <xmpMetadata><![CDATA[<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 7.1-c000 79.4d2f597, 2021/09/01-20:51:22        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+            xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/">
+         <xmp:CreatorTool>Adobe Audition 22.2 (Windows)</xmp:CreatorTool>
+         <xmp:CreateDate>2022-03-18T08:17:54-04:00</xmp:CreateDate>
+         <xmp:MetadataDate>2022-03-18T10:53:06-04:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2022-03-18T10:53:06-04:00</xmp:ModifyDate>
+         <xmpMM:InstanceID>xmp.iid:bd5277be-e305-a849-9f2c-8e1d46dc3c5a</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:bd5277be-e305-a849-9f2c-8e1d46dc3c5a</xmpMM:DocumentID>
+         <xmpMM:OriginalDocumentID>xmp.did:fb924e86-3ea3-ad45-918e-4b5c06fe42a4</xmpMM:OriginalDocumentID>
+         <xmpMM:History>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:fb924e86-3ea3-ad45-918e-4b5c06fe42a4</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:17:55-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:991a825b-037b-0647-b921-725d01369083</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:34:30-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:3f96188f-5513-994a-8b5e-d5b77b950ac4</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:34:30-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:8a0ced75-f3c7-3541-9aa4-2401c1beabe8</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:35:34-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:2ca08f7c-44ef-4b49-91ee-f642f5acd31f</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:35:34-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:a816ab03-e947-3b4e-9a7e-d76e96a9330a</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:35:58-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:12f0667c-bc09-f148-9c48-d1688823644b</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:35:58-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:ed1db6c6-43c6-f44f-9006-c724e211b0a3</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:39:26-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:07860dd9-f6eb-b04e-aad6-3063a9c75fed</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:39:26-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:e9f867d2-3c3d-c846-9ea2-0924f300a34f</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:39:37-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:684a6909-41a0-fe41-82a7-c63fdbc6c146</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T08:39:37-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:5042d66f-e30c-fa49-a7ab-886df7f23851</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:10:40-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:139d5931-9a6e-964c-86dd-cb255a4e1e8f</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:10:40-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:19bfb113-97ac-8345-9a04-4e734cd4e545</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:11:07-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:4e3fff48-fee4-e849-8bf0-1aeb6b908b0d</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:11:07-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:6c2eb814-d349-6b48-8311-fab9bf317d6c</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:16:11-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:834b565c-e390-e143-8bee-5ba3f5e66f2b</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:16:11-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:36e9764a-7c98-034b-93c4-135f79f022b1</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:16:47-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:e80b0ec8-c32a-454e-b342-4cd4fe3e968c</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:16:47-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:37f03d1b-02c6-534f-975a-2c460f3dea5e</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:18:02-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:fc7fa8aa-833c-c140-a6ee-f9d0b53472ad</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:18:02-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:fdf975cb-7c4b-3b41-9264-659366cdeee3</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:18:45-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:77ca3c60-0f12-544d-be36-4af1a4e4b96a</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:18:45-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b755cc53-b688-164e-b7da-008e09e2432a</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:20:05-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:fc1d10a9-5225-3545-b4b4-41a8b9826053</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:20:05-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:be44608d-c7b9-ec49-bd7b-c9128793c55f</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:21:13-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:c95c4162-4afb-cd42-88eb-0f832ee54def</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:21:13-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:3e6c84ff-48bd-4c4c-a326-0a6e15a564eb</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:26:40-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:5d020a9b-dae1-a447-8068-94ae39fe9513</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:26:40-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:4ec3c226-3200-8e45-b244-b07f0e052f3c</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:27:59-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:0c6ba70a-e8ef-804a-bf20-be1f30ae5143</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:27:59-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:4e0f21f8-870f-6544-abfb-8a9d0a1e8b8a</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:29:13-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:abf0db4c-a46b-fb40-9f2d-4f7024f47785</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:29:13-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:a3d8a974-1345-534a-b30c-5f785fc265e9</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:29:22-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:3f2e9df8-5f94-1949-b556-df31e0e7a973</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:29:22-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:2998ff73-ebb9-054d-ba73-f0a3eaa24b61</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:29:52-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:79db1a53-4d1b-bf4e-b58f-2f95b302c4fb</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:29:52-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:90af1bdb-d7b0-284e-8806-421e22f3b225</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:30:08-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:8c52be7c-4473-1747-a78f-be0663a41220</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:30:08-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:36f0f0d3-b708-2845-a551-6e7a35b1488e</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:30:26-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:07cff29b-8c32-ad43-9352-f0ce743aaffe</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:30:26-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:8b3e0d33-0bd7-6d4a-a66c-6193858da70f</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:30:36-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:7f2d0cb6-5d80-d34a-92f8-2a2aa55129d2</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:30:36-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:9567528f-c7d7-b54a-9a17-10d9a4669abc</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:30:47-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:2b437c93-0416-2d4d-80e5-1320e5253bd4</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:30:47-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:abcfa49d-63e4-d547-be1e-53a33a4a3e7d</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:31:15-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:a167c2e0-a66f-ec45-94f5-89e4b63ae8fb</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:31:15-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:efde6187-fe28-bb4b-a1eb-b3ba01cf9e8b</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:31:40-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b5a09413-546e-924b-b8fc-d79f643ad68b</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:31:40-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:e9b1e274-a0b6-6945-9880-accfc39ca79f</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:31:44-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b47e6fba-3536-744f-a487-cd0cc2ee6d17</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:31:44-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:160b790f-ee2e-8947-8ee3-dc894e44a735</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:11-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b1798880-c968-e84f-8c06-893c5dfb4bcc</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:11-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:566cf05d-fcd2-464d-af70-d287c19125ea</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:24-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:a8c5fef6-4cd3-ee4f-b828-fe9d0b665aad</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:24-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:bfb07465-5b96-2e4d-b571-68e9d2fb26e6</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:33-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:396347b3-9bae-cb42-b7c8-e1067e6d6d81</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:33-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:d6c56f13-8f4c-ef44-a637-1c9ae28b63fa</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:41-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:2624fc51-ad6a-f64e-b345-e5fb7b1bb985</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:41-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:21a31578-addf-3543-9ac2-e1d761fd1a03</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:55-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:efa07168-a157-b14f-96fc-95c172acffe1</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:32:55-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:c1e9c247-e23b-9c41-87bb-207369fedea0</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:33:03-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:d82cef57-da8a-fd4f-8535-e9ca83246aae</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:33:03-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:45c1560b-a8af-8745-b3c0-b4530c564c1c</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:33:11-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b5534274-359f-0c42-9a2f-357b140a9432</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:33:11-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:00ad3f0c-8480-1e49-b920-07cf7d4fd78c</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:33:24-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:1485475b-cec4-284d-b043-88f4a83e42cc</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:33:24-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:47d1ceb2-e496-1045-ab5d-9cb202706e14</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:33:28-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:c3f18479-ffc4-1147-bb20-393df41b6bc7</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:33:28-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:face4b52-4e59-f94d-82bb-c19b77c2bf6a</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:35:43-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:812b44cb-6b00-5948-a3ba-d07e0580377c</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:35:43-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:f19fce32-33d7-ea42-abf5-c3b6aaa6ab83</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:35:54-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:6bfb6d04-6805-6744-ab39-0ac95988c0f3</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:35:54-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:8c0f5603-7ab8-614f-a1ef-9ce6919ffd4d</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:36:36-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:146b5cbd-fc64-c148-b111-76f86befdfce</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:36:36-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:3576086c-0828-6846-b92e-ee9c559cf58a</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:36:46-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:45ed557c-8ea5-394c-9976-4d218331a9bc</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:36:46-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:c10ffffe-8c7e-e14a-8ec2-7228c821ab7d</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:36:49-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:0a9b0658-8519-aa4d-9f2e-3c45f19e09cd</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:36:49-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:53f6f13a-1440-cb40-ba05-ed09416dd7e7</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:37:02-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:2ae0e1ab-9cfc-3142-ab57-6eb12a6a9c62</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:37:02-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:eda2023f-fe44-7141-93f3-fbb14c438bb2</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:37:08-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:e4b37a84-8000-3e42-bd11-f33a36494119</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:37:08-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:a401b004-ce4e-1642-8bd8-f2ae4557a401</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:37:21-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b50c2501-905f-6440-8e21-8fff95c0b001</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:37:21-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:46e7bb5a-464d-fd43-8a5a-bfcfd9d42101</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:37:22-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:9746eb69-7b36-8941-a1ac-e1d045d5996e</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:37:22-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:92033f6e-98b5-8f48-8d0e-4f2821a24eb9</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:48:56-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:e4f64a3a-00d8-7349-9453-f27b8a5a64b0</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:48:56-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:cc8dc341-e93b-994e-a35e-4373812e64fa</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:49:34-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:eb71e6ee-4e61-c944-afdb-9935fab23a5d</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:49:34-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:dd3bdafc-b406-944b-ad8c-7f3f192394f5</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:52:13-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:9349ece8-dc4d-a541-9e46-97ef0ff1ecd6</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T09:52:13-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:8d4e4010-0b58-884b-a645-9797c7fd5927</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:47:35-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b8e12cb9-fd17-3d48-8908-473384ec80ce</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:47:35-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:26344ba5-0807-ed49-be6f-7e82dbc796b2</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:49:19-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:dfce7746-0f2b-a84e-a6a9-9163092cd65d</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:49:19-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:2baa69e7-b297-db4e-9eb6-fcf7a5b88c69</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:51:02-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:afbdc770-0a0b-f745-84b7-1cd315ed3fe1</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:51:02-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:8eedb388-1dc0-f246-a6a2-8324e4351cf5</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:51:16-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:34e08718-920f-9d4c-b885-c1425f8f3044</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:51:16-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:32aa1aae-3e54-a449-8278-b1a7d86ad04b</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:53:06-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:bd5277be-e305-a849-9f2c-8e1d46dc3c5a</stEvt:instanceID>
+                  <stEvt:when>2022-03-18T10:53:06-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 22.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+            </rdf:Seq>
+         </xmpMM:History>
+         <xmpMM:DerivedFrom rdf:parseType="Resource">
+            <stRef:instanceID>xmp.iid:32aa1aae-3e54-a449-8278-b1a7d86ad04b</stRef:instanceID>
+            <stRef:documentID>xmp.did:fb924e86-3ea3-ad45-918e-4b5c06fe42a4</stRef:documentID>
+            <stRef:originalDocumentID>xmp.did:fb924e86-3ea3-ad45-918e-4b5c06fe42a4</stRef:originalDocumentID>
+         </xmpMM:DerivedFrom>
+         <dc:format>application/xml</dc:format>
+         <xmpDM:Tracks>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CuePoint Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Cue</xmpDM:trackType>
+                  <xmpDM:frameRate>f48000</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CD Track Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Track</xmpDM:trackType>
+                  <xmpDM:frameRate>f48000</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>Subclip Markers</xmpDM:trackName>
+                  <xmpDM:trackType>InOut</xmpDM:trackType>
+                  <xmpDM:frameRate>f48000</xmpDM:frameRate>
+               </rdf:li>
+            </rdf:Bag>
+         </xmpDM:Tracks>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>]]></xmpMetadata>
+    <clipGroups/>
+    <metronome enabled="false" pattern="downBeat subdivision subdivision subdivision " soundSet="sticks">
+      <metronomeTrack automationLaneOpenState="false" id="40000" index="0" select="false" visible="false">
+        <trackParameters trackHeight="77" trackHue="-1" trackMinimized="false">
+          <name>Metronome</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="mono" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="33dd4f21-9aef-44d9-936d-ec643870bb87" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="0.50118720531463623046875"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="76034e76-b57d-4b3e-a401-bac0e8a00ab7" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="3f99c83d-887b-4243-8804-0649ee5d15f2" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="2bfe067b-eb4e-4526-8a4a-e982457af384" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.25"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </metronomeTrack>
+    </metronome>
+    <properties>
+      <property key="EssentialSoundConfigurations">[{"Guid":"a8b40e3e-13e7-4c1f-b382-96058f1f691d","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"ambience","Models":{"model_ducking":{},"model_loudness":{"DefaultLoudness":{"type":"float","value":-30},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_soundeffects":{"ReverbPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/ReverbPreset/LargeRoomAmbience=Large Room Ambience":{"type":"array::float","value":[0.051507499068975449,0.32432401180267334,0.29292899370193481,0.30000001192092896,0.20000000298023224,0,0.14285700023174286,0.40000000596046448,0.5,0.69999998807907104,0.30000001192092896,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/OutsideAmbience=Outside Ambience":{"type":"array::float","value":[0.091708503663539886,0.043893899768590927,1,0.5,0.20000000298023224,0.80000001192092896,0.18367299437522888,1,0.5,0,0.80000001192092896,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/RoomAmbience=Room Ambience":{"type":"array::float","value":[0.057788901031017303,0.44944900274276733,0.49494898319244385,0.89999997615814209,0.10000000149011612,0.15000000596046448,0.081632703542709351,0.40000000596046448,0.5,0.80000001192092896,0.20000000298023224,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/WindEffect=Wind Effect":{"type":"array::float","value":[0.19597999751567841,0.6896899938583374,0.69696998596191406,0.25,0.5,0.5,0.23469400405883789,0.51999998092651367,0.5,0.75,0.25,0.25125628709793091,0.03125]}}}},"model_stereowidth":{},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"58dc27a8-6a2a-480c-bd0c-4b45fff346a6","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"dialog","Models":{"model_clarity":{"EQPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/EQPreset/BackgroundVoice=Background Voice":{"type":"array::float","value":[0.12099699676036835,0.5,0.39240506291389465,0,0.5,0.5,0.5,0.5,0.5,0.47827938199043274,0.45772689580917358,0.45778733491897583,0.47946760058403015,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/Intercom=Intercom":{"type":"array::float","value":[0.19432899355888367,0.5,1,0,0.071499988436698914,0.071499988436698914,0.071499988436698914,0.40238627791404724,0.48571401834487915,0.5,0.55155748128890991,0.59602576494216919,0.22246670722961426,0.071499988436698914,0]},"$$$/app/Presets/EssentialSound/EQPreset/LockedInTheTrunk=Locked in the Trunk":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.5,0.5,0.5,0.5,0.5,0.32846158742904663,0.15721426904201508,0.15721426904201508,0.15721426904201508,0.15721426904201508,0]},"$$$/app/Presets/EssentialSound/EQPreset/OldRadio=Old Radio":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.15721426904201508,0.15721426904201508,0.15721426904201508,0.28442040085792542,0.48315632343292236,0.36498492956161499,0.52853888273239136,0.43511500954627991,0.27154684066772461,0.15721426904201508,0]},"$$$/app/Presets/EssentialSound/EQPreset/OnTheTelephone=On the Telephone":{"type":"array::float","value":[0.12099699676036835,0.5,0.39240506291389465,0,0.32864287495613098,0.32864287495613098,0.32864287495613098,0.32864287495613098,0.48571401834487915,0.53071397542953491,0.53071397542953491,0.48357096314430237,0.32864287495613098,0.32864287495613098,0]},"$$$/app/Presets/EssentialSound/EQPreset/OutsideOfTheRoom=Outside of the Room":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.42539370059967041,0.47865453362464905,0.5,0.5,0.48571401834487915,0.40073278546333313,0.25656309723854065,0.15721426904201508,0.15721426904201508,0.15721426904201508,0]},"$$$/app/Presets/EssentialSound/EQPreset/PodcastVoice=Podcast Voice":{"type":"array::float","value":[0.12099699676036835,0.5,0.39240506291389465,0,0.5,0.5,0.5,0.51789408922195435,0.50770342350006104,0.5,0.51789408922195435,0.528114914894104,0.5102812647819519,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/SubtleBoostFemale=Subtle Boost (Female)":{"type":"array::float","value":[0.096553400158882141,0.5,0.29113924503326416,0,0.5,0.5,0.5,0.5,0.5,0.51933407783508301,0.54642897844314575,0.52706766128540039,0.5,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/SubtleBoostMale=Subtle Boost (Male)":{"type":"array::float","value":[0.096553400158882141,0.5,0.29113924503326416,0,0.5,0.5,0.5,0.5,0.5,0.5135338306427002,0.54642897844314575,0.51933407783508301,0.5,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/ThatPublicRadioSound=That Public Radio Sound":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.15721426904201508,0.15721426904201508,0.15721426904201508,0.36334344744682312,0.49468311667442322,0.5,0.5,0.5,0.5,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/VocalPresence=Vocal Presence":{"type":"array::float","value":[0.096553400158882141,0.5,0.32489451766014099,0,0.3572143018245697,0.3572143018245697,0.46428570151329041,0.47857141494750977,0.4763694703578949,0.49570354819297791,0.55924957990646362,0.56523394584655762,0.50859290361404419,0.46992480754852295,0]}}}},"model_loudness":{"DefaultLoudness":{"type":"float","value":-23},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_restoration":{"ReduceNoiseMaxSetting":{"type":"array::float","value":[1,0,0,0,0]},"ReduceNoiseMinSetting":{"type":"array::float","value":[0,0,0,0,0]},"ReduceReverbMaxSetting":{"type":"array::float","value":[1,0,1,0,0]},"ReduceReverbMinSetting":{"type":"array::float","value":[0,0,1,0,0]},"ReduceRumbleMaxSetting":{"type":"array::float","value":[1,0.061583578586578369,0.375,0,0,0.00083333335351198912,1,0,1,0.0390625,0.00083408987848088145,0,0.0041666668839752674,0.00022554649331141263,0.0046875001862645149,0.75,0.0052083334885537624,0.75,1,0.75,0.0040520834736526012,0.75,0.0042629167437553406,0.00022554649331141263,0.0064883334562182426,0.00022554649331141263,0.006866666954010725,0.75,0.0071704164147377014,0.00022554649331141263,0.01041458360850811,0.00022554649331141263,0.010900000110268593,0.75,0.011407917365431786,0.00022554649331141263,0.015606249682605267,0.00022554649331141263,0.016333334147930145,0.75,0.017094582319259644,0.00022554649331141263,0.026243748143315315,0.00022554649331141263,0.0274666678160429,0.75,0.028746666386723518,0.00022554649331141263,0.041658751666545868,0.00022554649331141263,0.043600000441074371,0.75,0.045631669461727142,0.00022554649331141263,0.062424581497907639,0.00022554649331141263,0.065333336591720581,0.75,0.068377502262592316,0.00022554649331141263,0.10497540980577469,0.00022554649331141263,0.1098666712641716,0.75,0.11498583108186722,0.00022554649331141263,0.16663584113121033,0.00022554649331141263,0.17440000176429749,0.75,0.18252624571323395,0.00022554649331141263,0.91874998807907104,0.00022554649331141263,1,0.00022554649331141263,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"ReduceRumbleMinSetting":{"type":"array::float","value":[1,0.061583578586578369,0.375,0,0,0.00083333335351198912,1,0,1,0.0390625,0.00083408987848088145,0.75,0.0041666668839752674,0.75,0.0046875001862645149,0.75,0.0052083334885537624,0.75,1,0.75,0.91874998807907104,0.61237245798110962,1,0.61237245798110962,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"ReduceSibilanceMaxSetting":{"type":"array::float","value":[0.5,0.19983997941017151,0.18367347121238708,0.26086956262588501,0.52702701091766357,0,1,0,0,0,0,0.75,1,1,0.40000000596046448]},"ReduceSibilanceMinSetting":{"type":"array::float","value":[0.875,0.19983997941017151,0.18367347121238708,0.19130434095859528,0.25675675272941589,0,1,0,0,0,0,0.75,1,1,0.40000000596046448]}},"model_soundeffects":{"ReverbPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/ReverbPreset/Auditorium=Auditorium":{"type":"array::float","value":[0.013047545216977596,0.15895412862300873,1,0.89999997615814209,0,0.52007436752319336,0.41663265228271484,0.46000000834465027,0.5,0.73000001907348633,0.15999999642372131,0.75376886129379272,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/Church=Church":{"type":"array::float","value":[0.032663315534591675,0.39939939975738525,0.79797977209091187,0.25,0.5,0.5,0.2297959178686142,0.72000002861022949,0.5,0.62999999523162842,0.87999999523162842,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/LargeReflectiveRoom=Large Reflective Room":{"type":"array::float","value":[0.0074449013918638229,0.098988421261310577,0.79890537261962891,0.89999997615814209,0.10000000149011612,0.40110713243484497,0.060284845530986786,0.27522978186607361,0.5,0.73000001907348633,0.31999999284744263,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/OutsideTheClub=Outside the Club":{"type":"array::float","value":[0.020615793764591217,0.050136558711528778,0.69696998596191406,0.25,0.094355784356594086,0.22242647409439087,0.1071428582072258,0.2800000011920929,0.5,0.73000001907348633,0.46000000834465027,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/SmallDryRoom=Small Dry Room":{"type":"array::float","value":[0.24623115360736847,0.69975000619888306,0.29292899370193481,0.40000000596046448,0.20000000298023224,0.40000000596046448,0.039285715669393539,0.10000000149011612,0.5,1,0.5,0.75376886129379272,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/ThickenVoice=Thicken Voice":{"type":"array::float","value":[0.19597999751567841,0.23931467533111572,0.69696998596191406,0.25,0.5,0.53999996185302734,0.020408162847161293,0.20945435762405396,0.5,1,0.34999999403953552,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/WarmRoom=Warm Room":{"type":"array::float","value":[0.020100502297282219,0.074074074625968933,0.49494948983192444,0.40000000596046448,0.74960309267044067,0.40000000596046448,0.1239795908331871,0.67000001668930054,0.5,0.85000002384185791,0.56000000238418579,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/WarmVoice=Warm Voice":{"type":"array::float","value":[0.19597989320755005,0.89989989995956421,0,0.40000000596046448,0.20000000298023224,0.40000000596046448,0.10204081982374191,0.090000003576278687,0.5,1,0.30000001192092896,0.25125628709793091,0.03125]}}}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":2},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"353811fa-4179-435e-8e5e-23028ba15a7a","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"generic","Models":{"model_loudness":{"DefaultLoudness":{"type":"float","value":-24},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"31ba96a6-5d3e-4d89-b1e1-1dbe3c055d0c","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"music","Models":{"model_ducking":{},"model_duration":{},"model_loudness":{"DefaultLoudness":{"type":"float","value":-25},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"cea63332-1adc-44a9-a6eb-5490f965859b","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"sfx","Models":{"model_loudness":{"DefaultLoudness":{"type":"float","value":-21},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_pan":{},"model_soundeffects":{"ReverbPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/ReverbPreset/HeavyReverb=Heavy Reverb":{"type":"array::float","value":[0.13316600024700165,0.29929900169372559,1,0.95999997854232788,0.85000002384185791,0.5,0.51530599594116211,0.30000001192092896,0.5,0.5,0.5,0.25125628709793091,0.0625]},"$$$/app/Presets/EssentialSound/ReverbPreset/LightReverb=Light Reverb":{"type":"array::float","value":[0.095477402210235596,0.29929900169372559,0.090909101068973541,1,1,0.80000001192092896,0.22449000179767609,0.60000002384185791,0.5,0.69999998807907104,0.30000001192092896,0.25125628709793091,0.0625]},"$$$/app/Presets/EssentialSound/ReverbPreset/OutsideReverb=Outside Reverb":{"type":"array::float","value":[0.091708503663539886,0.043893899768590927,1,0.5,0.20000000298023224,0.80000001192092896,0.18367299437522888,1,0.5,0,0.80000001192092896,0.25125628709793091,0.0625]},"$$$/app/Presets/EssentialSound/ReverbPreset/RoomReverb=Room Reverb":{"type":"array::float","value":[0.057788901031017303,0.44944900274276733,0.49494898319244385,0.89999997615814209,0.10000000149011612,0.15000000596046448,0.081632703542709351,0.40000000596046448,0.5,0.80000001192092896,0.20000000298023224,0.25125628709793091,0.0625]}}}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1}]</property>
+    </properties>
+  </session>
+
+  <files>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_002.wav" id="0" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="c9c5a5fc-7d67-4705-bc5f-407a88bd6735" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_002.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_005.wav" id="1" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="1b72128d-b596-4c8b-a3bb-a993c0d3d893" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_005.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_003.wav" id="2" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="95d382ad-0f58-40e0-a7ba-461145b09f46" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_003.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_010.wav" id="3" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="440c4d5e-458c-497e-ad65-82df20878dc3" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_010.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_009.wav" id="4" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="f808848a-2d8b-47f5-b784-530cbb57904c" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_009.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_011.wav" id="5" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="3ab2d810-5d76-4ece-bbd3-105d66c2951c" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_011.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_012.wav" id="6" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="5e9ae936-3fb3-4b6a-9d04-6d5a8a25c214" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_012.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_014.wav" id="7" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="4d4b8ce9-d37c-4a4e-9416-69c83b26c55c" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_014.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_017.wav" id="8" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="c94eb7c5-ab57-46ea-8577-2558c321e889" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_017.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_018.wav" id="9" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="0b19cf4b-324e-4606-92d1-842a9986c24d" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_018.wav"/>
+    <file absolutePath="C:\Users\cyber\Documents\School\4thYear\B\4474\GroupProject\4474-Math-Games-Remake\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines\Dino Skateboarding Voice Lines_Recorded\Track 1_019.wav" id="10" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:1;" mediaHandler="AmioWav" recoveryID="e2b93365-31e3-4046-8ebd-2892fe9ac042" relativePath="../Dino Skateboarding Voice Lines_Recorded/Track 1_019.wav"/>
+  </files>
+
+  <audioDevice inputID="3FB5CCCE-5AA9-4F50-B80A-617FFC1F5F24" outputID="11111111-1111-1111-1111-11111111">
+    <inputPort id="1" name="Default Stereo Input"/>
+    <inputPort id="2" name="[01M] Microphone (Blue Snowball) 1"/>
+    <inputPort id="3" name="[02M] Microphone (Blue Snowball) 2"/>
+    <inputPort id="4" name="[01S] Microphone (Blue Snowball) 1"/>
+    <outputPort id="1" name="Default Output"/>
+    <outputPort id="2" name="[01M] System Default - Headphones (ATH-ANC700BT Stereo) 1"/>
+    <outputPort id="3" name="[02M] System Default - Headphones (ATH-ANC700BT Stereo) 2"/>
+    <outputPort id="4" name="Default Stereo Output"/>
+    <outputPort id="5" name="[01S] System Default - Headphones (ATH-ANC700BT Stereo) 1"/>
+    <outputPort id="6" name="Default Surround Output"/>
+  </audioDevice>
+
+</sesx>

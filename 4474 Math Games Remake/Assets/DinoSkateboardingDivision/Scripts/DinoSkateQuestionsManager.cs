@@ -12,9 +12,12 @@ public class DinoSkateQuestionsManager : MonoBehaviour
     public Transform questionOnScreenPos;
     public Transform questionOffScreenPos;
 
+    public AudioClip equationVoiceLine;
+
     private bool questionActive;
     private string[] questions;
     private int questionNum = -1;
+    private DinoSkateVoiceManager voiceManager;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +58,7 @@ public class DinoSkateQuestionsManager : MonoBehaviour
 
             questionAnswers[i].SetupNumbers(answers, correctSpot);
         }
+        voiceManager = FindObjectOfType<DinoSkateVoiceManager>();
     }
 
     // Update is called once per frame
@@ -69,13 +73,30 @@ public class DinoSkateQuestionsManager : MonoBehaviour
 
     public void ActivateQuestion()
     {
+        voiceManager.PlayVoiceLine(equationVoiceLine);
         questionNum++;
         questionActive = true;
         questionText.text = questions[questionNum];
+        StartCoroutine(WaitToRepeatVoiceLine());
+    }
+
+    IEnumerator WaitToRepeatVoiceLine()
+    {
+        while (true) {
+            yield return new WaitForSeconds(8);
+            voiceManager.PlayVoiceLine(equationVoiceLine);
+        }
     }
     
     public void Solved()
     {
         questionActive = false;
+        StopAllCoroutines();
+    }
+
+    public void Wrong()
+    {
+        StopAllCoroutines();
+        StartCoroutine(WaitToRepeatVoiceLine());
     }
 }

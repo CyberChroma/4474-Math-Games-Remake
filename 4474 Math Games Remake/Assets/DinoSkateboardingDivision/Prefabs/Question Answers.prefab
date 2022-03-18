@@ -55,6 +55,8 @@ MonoBehaviour:
   - {fileID: 341557805216488992}
   - {fileID: 1478378914105038135}
   - {fileID: 1478378914538286120}
+  answerWrongVoiceLine: {fileID: 8300000, guid: 6d74bf2afefca1147a921f87c0a30147, type: 3}
+  answerCorrectVoiceLine: {fileID: 8300000, guid: 1358f5eb7c9bb4e48bee76f032f12e59, type: 3}
 --- !u!1001 &7678023530076431109
 PrefabInstance:
   m_ObjectHideFlags: 0

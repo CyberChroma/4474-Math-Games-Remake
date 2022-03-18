@@ -16,12 +16,12 @@ public class DinoSkateAIMove : MonoBehaviour
     public float moveToEndSmoothing;
 
     [HideInInspector] public bool canMove;
+    [HideInInspector] public bool kickflipping;
     [HideInInspector] public bool doneRace;
     [HideInInspector] public bool raceOver;
     [HideInInspector] public Transform raceDonePos;
     [HideInInspector] public Animator anim;
 
-    private bool kickflipping;
     private float startX;
 
     // Start is called before the first frame update
@@ -44,19 +44,21 @@ public class DinoSkateAIMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("StepStop")) {
-            Kickflip();
-        } else if (other.CompareTag("Win")) {
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - normalSpeed * Time.deltaTime * 10);
-            StopAllCoroutines();
-            doneRace = true;
-            canMove = false;
+        if (!raceOver) {
+            if (other.CompareTag("StepStop")) {
+                Kickflip();
+            }
+            else if (other.CompareTag("Win")) {
+                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - normalSpeed * Time.deltaTime * 10);
+                StopAllCoroutines();
+                doneRace = true;
+                canMove = false;
+            }
         }
     }
 
     void Kickflip()
     {
-        canMove = true;
         StartCoroutine(MoveForStep());
     }
 
@@ -66,7 +68,7 @@ public class DinoSkateAIMove : MonoBehaviour
         anim.SetTrigger("Kickflip");
         kickflipping = true;
         while (Mathf.Abs(transform.position.x - (startX - 0.1f)) >= 0.5f) {
-            float newX = Mathf.Lerp(transform.position.x, (startX - 0.1f), stepMoveSideSmoothing * Time.deltaTime);
+            float newX = Mathf.Lerp(transform.position.x, startX - 0.1f, stepMoveSideSmoothing * Time.deltaTime);
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
             yield return null;
         }
