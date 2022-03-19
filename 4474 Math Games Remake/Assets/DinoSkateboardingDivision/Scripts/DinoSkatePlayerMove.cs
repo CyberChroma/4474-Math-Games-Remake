@@ -17,6 +17,7 @@ public class DinoSkatePlayerMove : MonoBehaviour
     [HideInInspector] public bool doneRace;
     [HideInInspector] public Transform raceDonePos;
     [HideInInspector] public Animator anim;
+    [HideInInspector] public DinoSkateDinoBlink dinoBlink;
 
     private DinoSkateQuestionsManager questionManager;
 
@@ -41,17 +42,18 @@ public class DinoSkatePlayerMove : MonoBehaviour
     {
         if (other.CompareTag("StepStop")) {
             questionManager.ActivateQuestion();
-            StartCoroutine(waitToStop());
+            StartCoroutine(WaitToStop());
         } else if (other.CompareTag("Win")) {
             canMove = false;
             doneRace = true;
         }
     }
 
-    IEnumerator waitToStop()
+    IEnumerator WaitToStop()
     {
         yield return new WaitForSeconds(1);
         canMove = false;
+        anim.SetTrigger("OffBoard");
     }
 
     public void Kickflip(int answerNum)
@@ -119,7 +121,18 @@ public class DinoSkatePlayerMove : MonoBehaviour
 
     public void Flop()
     {
-        // Do animation stuff
-        // anim.SetTrigger("Flop");
+        anim.SetTrigger("Flop");
+        StartCoroutine(ActivateLowerEyelids());
+    }
+
+    IEnumerator ActivateLowerEyelids ()
+    {
+        dinoBlink.overrideBlink = true;
+        dinoBlink.eyelids[0].SetActive(true);
+        dinoBlink.eyelids[1].SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        dinoBlink.overrideBlink = false;
+        dinoBlink.eyelids[0].SetActive(false);
+        dinoBlink.eyelids[1].SetActive(false);
     }
 }

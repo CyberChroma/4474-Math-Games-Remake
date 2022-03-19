@@ -10,6 +10,8 @@ public class DinoSkateDinoBlink : MonoBehaviour
 
     public GameObject[] eyelids;
 
+    [HideInInspector] public bool overrideBlink;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,12 +25,14 @@ public class DinoSkateDinoBlink : MonoBehaviour
     {
         while (true) {
             yield return new WaitForSeconds(Random.Range(blinkTimeMin, blinkTimeMax));
-            for (int i = 0; i < eyelids.Length; i++) {
-                eyelids[i].SetActive(true);
-            }
-            yield return new WaitForSeconds(blinkDuration);
-            for (int i = 0; i < eyelids.Length; i++) {
-                eyelids[i].SetActive(false);
+            if (!overrideBlink) {
+                for (int i = 0; i < eyelids.Length; i++) {
+                    eyelids[i].SetActive(true);
+                }
+                yield return new WaitForSeconds(blinkDuration);
+                for (int i = 0; i < eyelids.Length; i++) {
+                    eyelids[i].SetActive(false);
+                }
             }
         }
     }

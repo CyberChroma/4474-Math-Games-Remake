@@ -82,6 +82,10 @@ public class DinoSkateRaceManager : MonoBehaviour
         playerMove.canMove = true;
         AIMove1.canMove = true;
         AIMove2.canMove = true;
+        playerMove.anim.SetBool("IsPlayer", true);
+        playerMove.anim.SetTrigger("StartRace");
+        AIMove1.anim.SetTrigger("StartRace");
+        AIMove2.anim.SetTrigger("StartRace");
         characterSelectMusic.SetActive(false);
         raceMusic.SetActive(true);
         yield return new WaitForSeconds(2);
@@ -166,14 +170,24 @@ public class DinoSkateRaceManager : MonoBehaviour
                 case 2:
                     playerMove.raceDonePos = endPos2nd;
                     voiceManager.PlayVoiceLine(end2ndVoiceLine);
+                    playerMove.dinoBlink.overrideBlink = true;
+                    playerMove.dinoBlink.eyelids[2].SetActive(true);
+                    playerMove.dinoBlink.eyelids[3].SetActive(true);
                     break;
                 case 3:
                     playerMove.raceDonePos = endPos3rd;
                     voiceManager.PlayVoiceLine(end3rdVoiceLine);
+                    playerMove.dinoBlink.overrideBlink = true;
+                    playerMove.dinoBlink.eyelids[2].SetActive(true);
+                    playerMove.dinoBlink.eyelids[3].SetActive(true);
                     break;
             }
+            playerMove.anim.SetTrigger("OffBoard");
 
             AIMove1.StopAllCoroutines();
+            AIMove1.dinoBlink.overrideBlink = false;
+            AIMove1.dinoBlink.eyelids[0].SetActive(false);
+            AIMove1.dinoBlink.eyelids[1].SetActive(false);
             AIMove1.canMove = false;
             AIMove1.kickflipping = false;
             AIMove1.raceOver = true;
@@ -191,14 +205,24 @@ public class DinoSkateRaceManager : MonoBehaviour
                         break;
                     case 2:
                         AIMove1.raceDonePos = endPos2nd;
+                        AIMove1.dinoBlink.overrideBlink = true;
+                        AIMove1.dinoBlink.eyelids[2].SetActive(true);
+                        AIMove1.dinoBlink.eyelids[3].SetActive(true);
                         break;
                     case 3:
                         AIMove1.raceDonePos = endPos3rd;
+                        AIMove1.dinoBlink.overrideBlink = true;
+                        AIMove1.dinoBlink.eyelids[2].SetActive(true);
+                        AIMove1.dinoBlink.eyelids[3].SetActive(true);
                         break;
                 }
             }
+            AIMove1.anim.SetTrigger("OffBoard");
 
             AIMove2.StopAllCoroutines();
+            AIMove2.dinoBlink.overrideBlink = false;
+            AIMove2.dinoBlink.eyelids[0].SetActive(false);
+            AIMove2.dinoBlink.eyelids[1].SetActive(false);
             AIMove2.canMove = false;
             AIMove2.kickflipping = false;
             AIMove2.raceOver = true;
@@ -216,12 +240,19 @@ public class DinoSkateRaceManager : MonoBehaviour
                         break;
                     case 2:
                         AIMove2.raceDonePos = endPos2nd;
+                        AIMove2.dinoBlink.overrideBlink = true;
+                        AIMove2.dinoBlink.eyelids[2].SetActive(true);
+                        AIMove2.dinoBlink.eyelids[3].SetActive(true);
                         break;
                     case 3:
                         AIMove2.raceDonePos = endPos3rd;
+                        AIMove2.dinoBlink.overrideBlink = true;
+                        AIMove2.dinoBlink.eyelids[2].SetActive(true);
+                        AIMove2.dinoBlink.eyelids[3].SetActive(true);
                         break;
                 }
             }
+            AIMove2.anim.SetTrigger("OffBoard");
 
             playerMove.GetComponent<DinoSkateProgressionMeter>().enabled = false;
             AIMove1.GetComponent<DinoSkateProgressionMeter>().enabled = false;

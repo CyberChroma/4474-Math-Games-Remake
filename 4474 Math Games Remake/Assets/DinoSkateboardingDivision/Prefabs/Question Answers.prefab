@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae481ac5658c2af46ba39e606476f7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wrongAnswerStunTime: 1.5
   answerTexts:
   - {fileID: 341557805216488992}
   - {fileID: 1478378914105038135}

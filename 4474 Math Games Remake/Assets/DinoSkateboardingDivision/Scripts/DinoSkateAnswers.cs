@@ -6,6 +6,8 @@ using TMPro;
 
 public class DinoSkateAnswers : MonoBehaviour
 {
+    public float wrongAnswerStunTime;
+
     public TMP_Text[] answerTexts;
 
     public AudioClip answerWrongVoiceLine;
@@ -40,7 +42,7 @@ public class DinoSkateAnswers : MonoBehaviour
             answerTexts[answerNum].color = Color.green;
             questionsManager.Solved();
             playerMove.Kickflip(answerNum);
-            for(int i = 0; i < answerButtons.Length; i++) {
+            for (int i = 0; i < answerButtons.Length; i++) {
                 answerButtons[i].interactable = false;
             }
         }
@@ -48,8 +50,19 @@ public class DinoSkateAnswers : MonoBehaviour
             voiceManager.PlayVoiceLine(answerWrongVoiceLine);
             answerTexts[answerNum].color = Color.red;
             questionsManager.Wrong();
-            answerButtons[answerNum].interactable = false;
             playerMove.Flop();
+            StartCoroutine(StopAnswers());
+        }
+    }
+
+    IEnumerator StopAnswers()
+    {
+        for (int i = 0; i < answerButtons.Length; i++) {
+            answerButtons[i].interactable = false;
+        }
+        yield return new WaitForSeconds(wrongAnswerStunTime);
+        for (int i = 0; i < answerButtons.Length; i++) {
+            answerButtons[i].interactable = true;
         }
     }
 }

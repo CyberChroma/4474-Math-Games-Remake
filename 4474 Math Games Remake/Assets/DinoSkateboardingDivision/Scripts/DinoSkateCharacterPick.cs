@@ -118,34 +118,39 @@ public class DinoSkateCharacterPick : MonoBehaviour
     public void SelectCharacter(int characterSelected)
     {
         if (canSelect) {
+            Transform isoLean = playerMove.transform.Find("Isometric Lean");
             switch (characterSelected) {
                 case 0:
-                    playerMove.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(true);
-                    playerMove.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(false);
-                    playerMove.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(false);
-                    playerMove.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(false);
-                    playerMove.anim = playerMove.transform.Find("Isometric Lean").Find("Ripper").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(true);
+                    isoLean.Find("Slash").gameObject.SetActive(false);
+                    isoLean.Find("Skitch").gameObject.SetActive(false);
+                    isoLean.Find("Burley").gameObject.SetActive(false);
+                    playerMove.anim = isoLean.Find("Ripper").GetComponent<Animator>();
+                    playerMove.dinoBlink = isoLean.Find("Ripper").GetComponent<DinoSkateDinoBlink>();
                     break;
                 case 1:
-                    playerMove.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(false);
-                    playerMove.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(true);
-                    playerMove.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(false);
-                    playerMove.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(false);
-                    playerMove.anim = playerMove.transform.Find("Isometric Lean").Find("Slash").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(false);
+                    isoLean.Find("Slash").gameObject.SetActive(true);
+                    isoLean.Find("Skitch").gameObject.SetActive(false);
+                    isoLean.Find("Burley").gameObject.SetActive(false);
+                    playerMove.anim = isoLean.Find("Slash").GetComponent<Animator>();
+                    playerMove.dinoBlink = isoLean.Find("Slash").GetComponent<DinoSkateDinoBlink>();
                     break;
                 case 2:
-                    playerMove.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(false);
-                    playerMove.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(false);
-                    playerMove.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(true);
-                    playerMove.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(false);
-                    playerMove.anim = playerMove.transform.Find("Isometric Lean").Find("Skitch").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(false);
+                    isoLean.Find("Slash").gameObject.SetActive(false);
+                    isoLean.Find("Skitch").gameObject.SetActive(true);
+                    isoLean.Find("Burley").gameObject.SetActive(false);
+                    playerMove.anim = isoLean.Find("Skitch").GetComponent<Animator>();
+                    playerMove.dinoBlink = isoLean.Find("Skitch").GetComponent<DinoSkateDinoBlink>();
                     break;
                 case 3:
-                    playerMove.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(false);
-                    playerMove.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(false);
-                    playerMove.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(false);
-                    playerMove.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(true);
-                    playerMove.anim = playerMove.transform.Find("Isometric Lean").Find("Burley").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(false);
+                    isoLean.Find("Slash").gameObject.SetActive(false);
+                    isoLean.Find("Skitch").gameObject.SetActive(false);
+                    isoLean.Find("Burley").gameObject.SetActive(true);
+                    playerMove.anim = isoLean.Find("Burley").GetComponent<Animator>();
+                    playerMove.dinoBlink = isoLean.Find("Burley").GetComponent<DinoSkateDinoBlink>();
                     break;
             }
             playerMove.anim.SetFloat("RandomStart", Random.Range(0f, 1f));
@@ -156,34 +161,39 @@ public class DinoSkateCharacterPick : MonoBehaviour
                 ai1Character = Random.Range(0, 4);
             }
 
+            isoLean = AIMove1.transform.Find("Isometric Lean");
             switch (ai1Character) {
                 case 0:
-                    AIMove1.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(true);
-                    AIMove1.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(false);
-                    AIMove1.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(false);
-                    AIMove1.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(false);
-                    AIMove1.anim = AIMove1.transform.Find("Isometric Lean").Find("Ripper").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(true);
+                    isoLean.Find("Slash").gameObject.SetActive(false);
+                    isoLean.Find("Skitch").gameObject.SetActive(false);
+                    isoLean.Find("Burley").gameObject.SetActive(false);
+                    AIMove1.anim = isoLean.Find("Ripper").GetComponent<Animator>();
+                    AIMove1.dinoBlink = isoLean.Find("Ripper").GetComponent<DinoSkateDinoBlink>();
                     break;
                 case 1:
-                    AIMove1.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(false);
-                    AIMove1.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(true);
-                    AIMove1.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(false);
-                    AIMove1.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(false);
-                    AIMove1.anim = AIMove1.transform.Find("Isometric Lean").Find("Slash").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(false);
+                    isoLean.Find("Slash").gameObject.SetActive(true);
+                    isoLean.Find("Skitch").gameObject.SetActive(false);
+                    isoLean.Find("Burley").gameObject.SetActive(false);
+                    AIMove1.anim = isoLean.Find("Slash").GetComponent<Animator>();
+                    AIMove1.dinoBlink = isoLean.Find("Slash").GetComponent<DinoSkateDinoBlink>();
                     break;
                 case 2:
-                    AIMove1.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(false);
-                    AIMove1.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(false);
-                    AIMove1.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(true);
-                    AIMove1.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(false);
-                    AIMove1.anim = AIMove1.transform.Find("Isometric Lean").Find("Skitch").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(false);
+                    isoLean.Find("Slash").gameObject.SetActive(false);
+                    isoLean.Find("Skitch").gameObject.SetActive(true);
+                    isoLean.Find("Burley").gameObject.SetActive(false);
+                    AIMove1.anim = isoLean.Find("Skitch").GetComponent<Animator>();
+                    AIMove1.dinoBlink = isoLean.Find("Skitch").GetComponent<DinoSkateDinoBlink>();
                     break;
                 case 3:
-                    AIMove1.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(false);
-                    AIMove1.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(false);
-                    AIMove1.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(false);
-                    AIMove1.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(true);
-                    AIMove1.anim = AIMove1.transform.Find("Isometric Lean").Find("Burley").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(false);
+                    isoLean.Find("Slash").gameObject.SetActive(false);
+                    isoLean.Find("Skitch").gameObject.SetActive(false);
+                    isoLean.Find("Burley").gameObject.SetActive(true);
+                    AIMove1.anim = isoLean.Find("Burley").GetComponent<Animator>();
+                    AIMove1.dinoBlink = isoLean.Find("Burley").GetComponent<DinoSkateDinoBlink>();
                     break;
             }
             AIMove1.anim.SetFloat("RandomStart", Random.Range(0f, 1f));
@@ -195,34 +205,39 @@ public class DinoSkateCharacterPick : MonoBehaviour
                 ai2Character = Random.Range(0, 4);
             }
 
+            isoLean = AIMove2.transform.Find("Isometric Lean");
             switch (ai2Character) {
                 case 0:
-                    AIMove2.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(true);
-                    AIMove2.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(false);
-                    AIMove2.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(false);
-                    AIMove2.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(false);
-                    AIMove2.anim = AIMove2.transform.Find("Isometric Lean").Find("Ripper").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(true);
+                    isoLean.Find("Slash").gameObject.SetActive(false);
+                    isoLean.Find("Skitch").gameObject.SetActive(false);
+                    isoLean.Find("Burley").gameObject.SetActive(false);
+                    AIMove2.anim = isoLean.Find("Ripper").GetComponent<Animator>();
+                    AIMove2.dinoBlink = isoLean.Find("Ripper").GetComponent<DinoSkateDinoBlink>();
                     break;
                 case 1:
-                    AIMove2.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(false);
-                    AIMove2.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(true);
-                    AIMove2.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(false);
-                    AIMove2.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(false);
-                    AIMove2.anim = AIMove2.transform.Find("Isometric Lean").Find("Slash").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(false);
+                    isoLean.Find("Slash").gameObject.SetActive(true);
+                    isoLean.Find("Skitch").gameObject.SetActive(false);
+                    isoLean.Find("Burley").gameObject.SetActive(false);
+                    AIMove2.anim = isoLean.Find("Slash").GetComponent<Animator>();
+                    AIMove2.dinoBlink = isoLean.Find("Slash").GetComponent<DinoSkateDinoBlink>();
                     break;
                 case 2:
-                    AIMove2.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(false);
-                    AIMove2.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(false);
-                    AIMove2.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(true);
-                    AIMove2.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(false);
-                    AIMove2.anim = AIMove2.transform.Find("Isometric Lean").Find("Skitch").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(false);
+                    isoLean.Find("Slash").gameObject.SetActive(false);
+                    isoLean.Find("Skitch").gameObject.SetActive(true);
+                    isoLean.Find("Burley").gameObject.SetActive(false);
+                    AIMove2.anim = isoLean.Find("Skitch").GetComponent<Animator>();
+                    AIMove2.dinoBlink = isoLean.Find("Skitch").GetComponent<DinoSkateDinoBlink>();
                     break;
                 case 3:
-                    AIMove2.transform.Find("Isometric Lean").Find("Ripper").gameObject.SetActive(false);
-                    AIMove2.transform.Find("Isometric Lean").Find("Slash").gameObject.SetActive(false);
-                    AIMove2.transform.Find("Isometric Lean").Find("Skitch").gameObject.SetActive(false);
-                    AIMove2.transform.Find("Isometric Lean").Find("Burley").gameObject.SetActive(true);
-                    AIMove2.anim = AIMove2.transform.Find("Isometric Lean").Find("Burley").GetComponent<Animator>();
+                    isoLean.Find("Ripper").gameObject.SetActive(false);
+                    isoLean.Find("Slash").gameObject.SetActive(false);
+                    isoLean.Find("Skitch").gameObject.SetActive(false);
+                    isoLean.Find("Burley").gameObject.SetActive(true);
+                    AIMove2.anim = isoLean.Find("Burley").GetComponent<Animator>();
+                    AIMove2.dinoBlink = isoLean.Find("Burley").GetComponent<DinoSkateDinoBlink>();
                     break;
             }
             AIMove2.anim.SetFloat("RandomStart", Random.Range(0f, 1f));

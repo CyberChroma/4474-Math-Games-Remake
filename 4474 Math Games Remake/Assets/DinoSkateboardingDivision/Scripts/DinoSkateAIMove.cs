@@ -21,6 +21,7 @@ public class DinoSkateAIMove : MonoBehaviour
     [HideInInspector] public bool raceOver;
     [HideInInspector] public Transform raceDonePos;
     [HideInInspector] public Animator anim;
+    [HideInInspector] public DinoSkateDinoBlink dinoBlink;
 
     private float startX;
 
@@ -51,6 +52,9 @@ public class DinoSkateAIMove : MonoBehaviour
             else if (other.CompareTag("Win")) {
                 transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - normalSpeed * Time.deltaTime * 10);
                 StopAllCoroutines();
+                dinoBlink.overrideBlink = false;
+                dinoBlink.eyelids[2].SetActive(false);
+                dinoBlink.eyelids[3].SetActive(false);
                 doneRace = true;
                 canMove = false;
             }
@@ -91,9 +95,22 @@ public class DinoSkateAIMove : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(randomFailTimeMin, randomFailTimeMax));
             if (canMove && !kickflipping) {
                 canMove = false;
+                anim.SetTrigger("Flop");
+                StartCoroutine(ActivateLowerEyelids());
                 yield return new WaitForSeconds(flopDuration);
                 canMove = true;
             }
         }
+    }
+
+    IEnumerator ActivateLowerEyelids()
+    {
+        dinoBlink.overrideBlink = true;
+        dinoBlink.eyelids[0].SetActive(true);
+        dinoBlink.eyelids[1].SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        dinoBlink.overrideBlink = false;
+        dinoBlink.eyelids[0].SetActive(false);
+        dinoBlink.eyelids[1].SetActive(false);
     }
 }
