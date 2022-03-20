@@ -29,7 +29,12 @@ public class DinoSkateQuestionsManager : MonoBehaviour
             int divisor = Random.Range(1, 11);
             int quotient = Random.Range(0, 11);
             int dividend = divisor * quotient;
-            questions[i] = string.Format("{0} ÷ {1}", dividend, divisor);
+            if (i == 9) {
+                questions[i] = string.Format("Q{0}: {1} ÷ {2}", i + 1, dividend, divisor);
+            }
+            else {
+                questions[i] = string.Format("Q{0}:  {1} ÷ {2}", i + 1, dividend, divisor);
+            }
             int randomAnswer1 = Random.Range(0, 11);
             int randomAnswer2 = Random.Range(0, 11);
             while(randomAnswer1 == quotient) {
@@ -91,7 +96,6 @@ public class DinoSkateQuestionsManager : MonoBehaviour
     public void Solved()
     {
         questionActive = false;
-        StopAllCoroutines();
     }
 
     public void Wrong()

@@ -18,6 +18,7 @@ public class DinoSkateRaceManager : MonoBehaviour
     public Color silverColor;
     public Color bronzeColor;
 
+    public GameObject raceExplanationText;
     public GameObject readyText;
     public GameObject setText;
     public GameObject goText;
@@ -38,7 +39,14 @@ public class DinoSkateRaceManager : MonoBehaviour
     public Transform endText;
     public Transform endOnScreenPos;
     public Transform endOffScreenPos;
-    public Transform placeTextEndPos;
+    public TMP_Text youPlacedText;
+
+    [TextArea]
+    public string endDialogue1st;
+    [TextArea]
+    public string endDialogue2nd;
+    [TextArea]
+    public string endDialogue3rd;
 
     private bool raceOver;
     private int playerPlace;
@@ -47,6 +55,7 @@ public class DinoSkateRaceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        raceExplanationText.SetActive(false);
         readyText.SetActive(false);
         setText.SetActive(false);
         goText.SetActive(false);
@@ -63,7 +72,9 @@ public class DinoSkateRaceManager : MonoBehaviour
     IEnumerator ReadySetGo()
     {
         voiceManager.PlayVoiceLine(raceIntroVoiceLine);
+        raceExplanationText.SetActive(true);
         yield return new WaitForSeconds(4.5f);
+        raceExplanationText.SetActive(false);
         //Ready
         voiceManager.PlayVoiceLine(readyVoiceLine);
         readyText.SetActive(true);
@@ -102,7 +113,7 @@ public class DinoSkateRaceManager : MonoBehaviour
             EndRace();
         } else {
             endText.position = Vector3.Lerp(endText.position, endOnScreenPos.position, endTextMoveSmoothing * Time.deltaTime);
-            placeText.transform.position = Vector3.Lerp(placeText.transform.position, placeTextEndPos.position, endTextMoveSmoothing * Time.deltaTime);
+            //placeText.transform.position = Vector3.Lerp(placeText.transform.position, placeTextEndPos.position, endTextMoveSmoothing * Time.deltaTime);
         }
     }
 
@@ -166,6 +177,7 @@ public class DinoSkateRaceManager : MonoBehaviour
                 case 1:
                     playerMove.raceDonePos = endPos1st;
                     voiceManager.PlayVoiceLine(end1stVoiceLine);
+                    youPlacedText.text = endDialogue1st;
                     break;
                 case 2:
                     playerMove.raceDonePos = endPos2nd;
@@ -173,6 +185,7 @@ public class DinoSkateRaceManager : MonoBehaviour
                     playerMove.dinoBlink.overrideBlink = true;
                     playerMove.dinoBlink.eyelids[2].SetActive(true);
                     playerMove.dinoBlink.eyelids[3].SetActive(true);
+                    youPlacedText.text = endDialogue2nd;
                     break;
                 case 3:
                     playerMove.raceDonePos = endPos3rd;
@@ -180,6 +193,7 @@ public class DinoSkateRaceManager : MonoBehaviour
                     playerMove.dinoBlink.overrideBlink = true;
                     playerMove.dinoBlink.eyelids[2].SetActive(true);
                     playerMove.dinoBlink.eyelids[3].SetActive(true);
+                    youPlacedText.text = endDialogue3rd;
                     break;
             }
             playerMove.anim.SetTrigger("OffBoard");

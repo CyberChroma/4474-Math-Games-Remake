@@ -56,6 +56,13 @@ MonoBehaviour:
   - {fileID: 341557805216488992}
   - {fileID: 1478378914105038135}
   - {fileID: 1478378914538286120}
+  chooseAnswerDialogue: Click On A Number To Complete This Equation!
+  wrongAnswerDialogue: Oops! Try Again!
+  rightAnswerDialogue: Correct!
+  chooseAnswerDefaultColor: {r: 0.0049118996, g: 0, b: 1, a: 1}
+  wrongAnswerColor: {r: 1, g: 0, b: 0, a: 1}
+  rightAnswerColor: {r: 0.144001, g: 1, b: 0, a: 1}
+  chooseAnswerText: {fileID: 0}
   answerWrongVoiceLine: {fileID: 8300000, guid: 6d74bf2afefca1147a921f87c0a30147, type: 3}
   answerCorrectVoiceLine: {fileID: 8300000, guid: 1358f5eb7c9bb4e48bee76f032f12e59, type: 3}
 --- !u!1001 &7678023530076431109
