@@ -68,17 +68,16 @@ public class DinoSkateAIMove : MonoBehaviour
 
     IEnumerator MoveForStep()
     {
+        kickflipping = true;
         yield return new WaitForSeconds(1.1f);
         anim.SetTrigger("Kickflip");
-        kickflipping = true;
         while (Mathf.Abs(transform.position.x - (startX - 0.1f)) >= 0.5f) {
             float newX = Mathf.Lerp(transform.position.x, startX - 0.1f, stepMoveSideSmoothing * Time.deltaTime);
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
             yield return null;
         }
         yield return null;
-        kickflipping = false;
-        while (Mathf.Abs(transform.position.x - startX) >= 0.01f) {
+        while (Mathf.Abs(transform.position.x - startX) >= 0.02f) {
             float newX = Mathf.Lerp(transform.position.x, startX, stepMoveSideSmoothing * Time.deltaTime);
             if (Mathf.Abs(transform.position.x - newX) > stepMoveMaxSpeed * Time.deltaTime) {
                 newX = transform.position.x - stepMoveMaxSpeed * Time.deltaTime;
@@ -86,6 +85,7 @@ public class DinoSkateAIMove : MonoBehaviour
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
             yield return null;
         }
+        kickflipping = false;
         transform.position = new Vector3(startX, transform.position.y, transform.position.z);
     }
 
