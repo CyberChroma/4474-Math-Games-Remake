@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/SelectionScreen/SelectionScreen.unity
+    guid: 62a0e006660095b46bc1a31e1fc99a01
+  - enabled: 1
     path: Assets/DinoSkateboardingDivision/Scenes/DinoSkateboardingDivision.unity
     guid: a57f05508024a204898551b5ebcd92c5
-  - enabled: 1
-    path: Assets/MainMenu/Scenes/Main Menu.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
