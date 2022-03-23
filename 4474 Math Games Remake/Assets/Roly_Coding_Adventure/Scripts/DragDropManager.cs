@@ -22,7 +22,7 @@ public class DragDropManager : MonoBehaviour
 
 
     public void Start(){
-        slots = GameObject.FindGameObjectsWithTag("slot");
+        //slots = GameObject.FindGameObjectsWithTag("slot");
         slotColor = slots[0].GetComponent<Image>().color;
 
     } // end start
@@ -37,16 +37,19 @@ public class DragDropManager : MonoBehaviour
 
     IEnumerator Run(){
         runBtn.interactable = false;
+        
         canContinue = true;
         for(int i = slots.Length-1; i >= 0; i--){
             if(slots[i].GetComponent<JigsawDrop>().holding != null && canContinue){
                 slots[i].GetComponent<JigsawDrop>().holding.GetComponent<Roly_Command>().CommandRoly();
                 audioSource.Play();
               //  yield return new WaitWhile(() => nextCommand == false);
-                yield return new WaitForSecondsRealtime(2.25f);
-                GameObject.Find("Player").GetComponent<Roly_Movement>().checkCollision = true;
-                yield return new WaitForSecondsRealtime(0.2f);
-                GameObject.Find("Player").GetComponent<Roly_Movement>().checkCollision = false;
+                yield return new WaitForSeconds(2.5f);
+                if(GameObject.Find("Player") != null)
+                    GameObject.Find("Player").GetComponent<Roly_Movement>().checkCollision = true;
+                yield return new WaitForSeconds(0.2f);
+                if(GameObject.Find("Player") != null)
+                    GameObject.Find("Player").GetComponent<Roly_Movement>().checkCollision = false;
               //  Debug.Log("End Command");
 
             } // end if

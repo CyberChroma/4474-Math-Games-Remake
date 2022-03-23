@@ -177,7 +177,7 @@ MonoBehaviour:
   canMove: 0
   checkCollision: 0
   moveDirection: {x: -1, y: -1}
-  moveSpeed: 0.005
+  moveSpeed: 0.025
   x: {fileID: 1076794637}
   y: {fileID: 1749534215}
   runBtn: {fileID: 1418629709}
@@ -700,7 +700,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holding: {fileID: 0}
-  slots: []
+  slots:
+  - {fileID: 947208717}
+  - {fileID: 1836897567}
+  - {fileID: 1268505458}
+  - {fileID: 502979490}
+  - {fileID: 1009722628}
+  - {fileID: 1355538977}
   slotColor: {r: 0, g: 0, b: 0, a: 0}
   slotHighlight: {r: 1, g: 0.89133024, b: 0, a: 1}
   runBtn: {fileID: 1418629709}
@@ -8314,7 +8320,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: Roly_Level_3
+          m_StringArgument: Roly_Level_4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1619720418
