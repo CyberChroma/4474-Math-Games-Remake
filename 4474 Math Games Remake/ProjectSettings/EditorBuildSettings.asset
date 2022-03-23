@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DinoSkateboardingDivision/Scenes/DinoSkateboardingDivision.unity
     guid: a57f05508024a204898551b5ebcd92c5
+  - enabled: 1
+    path: Assets/Roly_Coding_Adventure/Scenes/Roly_MainMenu.unity
+    guid: 48f5a0dd9096a1d4fab1527e2da50efa
+  - enabled: 1
+    path: Assets/Roly_Coding_Adventure/Scenes/Roly_Level_1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Roly_Coding_Adventure/Scenes/Roly_Level_2.unity
+    guid: a6c234b853101674ba4e1f1c579c5d4a
+  - enabled: 1
+    path: Assets/Roly_Coding_Adventure/Scenes/Roly_Level_3.unity
+    guid: 4d70f943f2a339345bd65159a04dc39f
   m_configObjects: {}

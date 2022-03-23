@@ -7,6 +7,10 @@ public class SelectionMenu : MonoBehaviour {
         SceneManager.LoadScene(1);
     }
 
+    public void LoadGame(string sceneName){
+        SceneManager.LoadScene(sceneName);
+    } // end method 
+
     public void QuitGame() {
         Application.Quit();
     }
