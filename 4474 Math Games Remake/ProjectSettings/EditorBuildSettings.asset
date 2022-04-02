@@ -9,24 +9,27 @@ EditorBuildSettings:
     path: Assets/SelectionScreen/SelectionScreen.unity
     guid: 62a0e006660095b46bc1a31e1fc99a01
   - enabled: 1
-    path: Assets/DinoSkateboardingDivision/Scenes/DinoSkateboardingDivision.unity
+    path: Assets/Games/DinoSkateboardingDivision/Scenes/DinoSkateboardingDivision.unity
     guid: a57f05508024a204898551b5ebcd92c5
   - enabled: 1
-    path: Assets/Roly_Coding_Adventure/Scenes/Roly_MainMenu.unity
+    path: Assets/Games/Roly_Coding_Adventure/Scenes/Roly_MainMenu.unity
     guid: 48f5a0dd9096a1d4fab1527e2da50efa
   - enabled: 1
-    path: Assets/Roly_Coding_Adventure/Scenes/Roly_Level_1.unity
+    path: Assets/Games/Roly_Coding_Adventure/Scenes/Roly_Level_1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Roly_Coding_Adventure/Scenes/Roly_Level_2.unity
+    path: Assets/Games/Roly_Coding_Adventure/Scenes/Roly_Level_2.unity
     guid: a6c234b853101674ba4e1f1c579c5d4a
   - enabled: 1
-    path: Assets/Roly_Coding_Adventure/Scenes/Roly_Level_3.unity
+    path: Assets/Games/Roly_Coding_Adventure/Scenes/Roly_Level_3.unity
     guid: 4d70f943f2a339345bd65159a04dc39f
   - enabled: 1
-    path: Assets/Roly_Coding_Adventure/Scenes/Roly_Level_4.unity
+    path: Assets/Games/Roly_Coding_Adventure/Scenes/Roly_Level_4.unity
     guid: 3e8aecfaa45f923428428082ad0c2564
   - enabled: 1
-    path: Assets/DinoGraphLinear/DinoGraphLinear.unity
+    path: Assets/Games/DinoGraphLinear/DinoGraphLinear.unity
     guid: b789b936b350eb04684b2368a2579cc9
+  - enabled: 1
+    path: Assets/Games/CircusAngleMeasurement/CircusAngleMeasurement.unity
+    guid: e3737ec3acec42e4090bf3548dd21f35
   m_configObjects: {}
