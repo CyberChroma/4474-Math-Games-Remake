@@ -18,37 +18,43 @@ public class DinoSkateAudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        voiceMaxVolume = voiceManager.volume;
+        if (voiceManager) {
+            voiceMaxVolume = voiceManager.volume;
+        }
         levelMusicMaxVolume = levelMusic.volume;
-        charSelectMusicMaxVolume = charSelectMusic.volume;
+        if (charSelectMusic) {
+            charSelectMusicMaxVolume = charSelectMusic.volume;
+        }
         volumeSlider.value = PlayerPrefs.GetFloat("Volume", 1);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void Pause()
     {
         voiceManager.Pause();
         levelMusic.volume = volumeSlider.value * levelMusicMaxVolume * pauseVolumeMultiplier;
-        charSelectMusic.volume = volumeSlider.value * charSelectMusicMaxVolume * pauseVolumeMultiplier;
+        if (charSelectMusic) {
+            charSelectMusic.volume = volumeSlider.value * charSelectMusicMaxVolume * pauseVolumeMultiplier;
+        }
     }
 
     public void Resume()
     {
         voiceManager.UnPause();
         levelMusic.volume = volumeSlider.value * levelMusicMaxVolume;
-        charSelectMusic.volume = volumeSlider.value * charSelectMusicMaxVolume;
+        if (charSelectMusic) {
+            charSelectMusic.volume = volumeSlider.value * charSelectMusicMaxVolume;
+        }
     }
 
     public void VolumeChanged()
     {
-        voiceManager.volume = volumeSlider.value * voiceMaxVolume;
+        if (voiceManager) {
+            voiceManager.volume = volumeSlider.value * voiceMaxVolume;
+        }
         levelMusic.volume = volumeSlider.value * levelMusicMaxVolume * pauseVolumeMultiplier;
-        charSelectMusic.volume = volumeSlider.value * charSelectMusicMaxVolume * pauseVolumeMultiplier;
+        if (charSelectMusic) {
+            charSelectMusic.volume = volumeSlider.value * charSelectMusicMaxVolume * pauseVolumeMultiplier;
+        }
         PlayerPrefs.SetFloat("Volume", volumeSlider.value);
     }
 }

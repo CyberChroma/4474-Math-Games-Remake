@@ -27,6 +27,9 @@ public class ScoreManger : MonoBehaviour
     public GameObject pauseMenu;
 
     private static int score = 0;
+
+    private bool isPaused;
+
     private void Start()
     {
         startMenu.SetActive(true);
@@ -53,6 +56,12 @@ public class ScoreManger : MonoBehaviour
         return newList;
     }
 
+    public void PauseToggle()
+    {
+        Pause();
+        isPaused = !isPaused;
+    }
+    
     private void OnEnable()
     {
         score = 0;
@@ -103,6 +112,9 @@ public class ScoreManger : MonoBehaviour
         if (score == linear.Count + nonLinear.Count)
         {
             endMenu.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            PauseToggle();
         }
     }
 }
